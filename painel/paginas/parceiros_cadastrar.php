@@ -1,0 +1,103 @@
+<?php
+
+
+if($_GET['acao'] == 'cadastrar'){
+    $input_nome = mysql_real_escape_string($_POST['input_nome']);
+    $input_link = mysql_real_escape_string($_POST['input_link']);
+
+    $logo_tmp = $_FILES['input_logo']['tmp_name'];
+    $logo_name = $_FILES['input_logo']['name'];
+
+    if(!empty($logo_name)){
+        $logo_name = removercaracteres(date('dmYHis').$logo_name);
+    }
+
+    $sql_insert = "
+    INSERT INTO parceiros
+    (data_cadastro,usuario_cadastro,nome,link,logo)
+    VALUES
+    (NOW(),'".$_SESSION['usuario_online']."','".$input_nome."','".$input_link."','".$logo_name."')
+    ";
+
+    if(mysql_query($sql_insert)){
+        move_uploaded_file($logo_tmp, 'arquivos/parceiros/'.$logo_name);
+        echo "<script>location.href = '?secao=parceiros_editar&id=".mysql_insert_id()."&cadastrado=1';</script>";
+
+    }else{
+        $mensagem = "<p class='bg-danger'>Não foi possível efetuar o cadastro!</p>";
+    }
+}
+
+
+?>
+
+<div class="content-wrapper">
+    <section class="content-header">
+        <h1 class="pull-left">
+            Parceiros
+            <small>Cadastrar</small>
+        </h1>
+
+        <div class="pull-right">
+            <?php include "paginas/parceiros_menu.php"; ?>
+        </div>
+    </section>
+
+    <section class="content">
+        <div class="row">
+            <?=$mensagem?>
+
+            <form role="form" id="form" action="?secao=parceiros_cadastrar&acao=cadastrar" method="post"  enctype="multipart/form-data">
+                <div class="col-md-12">
+                    <div class="box box-primary" style="border-top-color:<?=$cor1?>;">
+                        <div class="box-header with-border">
+                            <h3 class="box-title">Dados</h3>
+                        </div>
+
+                        <div class="box-body">
+                            <div class="form-group">
+                                <label for="input-titulo" class="col-sm-2 control-label text-right">Nome</label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" id="input-nome" name="input_nome" placeholder="Nome">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="input-link" class="col-sm-2 control-label text-right">Link</label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" id="input-link" name="input_link" placeholder="Link">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="input-logo" class="col-sm-2 control-label text-right">Logo</label>
+                                <div class="col-sm-10">
+                                    <input type="file" class="form-control" id="input-logo" name="input_logo" style="width:auto;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <br clear="all">
+
+                <div class="text-center">
+                    <button type="submit" class="btn btn-primary" style="color:<?=$cor3?> !important">Cadastrar</button>
+                </div>
+            </form>
+        </div>
+    </section>
+</div>
+
+<style>
+.form-group{
+    width:100%;
+    float:left;
+}
+
+#form label{
+    padding-top:6px;
+}
+
+
+</style>

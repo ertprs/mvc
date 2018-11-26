@@ -1,0 +1,233 @@
+// SCSS variables are information about icon's compiled state, stored under its original file name
+//
+// .icon-home {
+//   width: $icon-home-width;
+// }
+//
+// The large array-like variables contain all information about a single icon
+// $icon-home: x y offset_x offset_y width height total_width total_height image_path;
+//
+// At the bottom of this section, we provide information about the spritesheet itself
+// $spritesheet: width height image $spritesheet-sprites;
+$add-cart-name: 'add-cart';
+$add-cart-x: 0px;
+$add-cart-y: 129px;
+$add-cart-offset-x: 0px;
+$add-cart-offset-y: -129px;
+$add-cart-width: 41px;
+$add-cart-height: 25px;
+$add-cart-total-width: 198px;
+$add-cart-total-height: 154px;
+$add-cart-image: '../img/sprites.png';
+$add-cart: (0px, 129px, 0px, -129px, 41px, 25px, 198px, 154px, '../img/sprites.png', 'add-cart', );
+$bg-redes-sociais-name: 'bg-redes-sociais';
+$bg-redes-sociais-x: 0px;
+$bg-redes-sociais-y: 0px;
+$bg-redes-sociais-offset-x: 0px;
+$bg-redes-sociais-offset-y: 0px;
+$bg-redes-sociais-width: 76px;
+$bg-redes-sociais-height: 69px;
+$bg-redes-sociais-total-width: 198px;
+$bg-redes-sociais-total-height: 154px;
+$bg-redes-sociais-image: '../img/sprites.png';
+$bg-redes-sociais: (0px, 0px, 0px, 0px, 76px, 69px, 198px, 154px, '../img/sprites.png', 'bg-redes-sociais', );
+$cart-name: 'cart';
+$cart-x: 97px;
+$cart-y: 69px;
+$cart-offset-x: -97px;
+$cart-offset-y: -69px;
+$cart-width: 37px;
+$cart-height: 32px;
+$cart-total-width: 198px;
+$cart-total-height: 154px;
+$cart-image: '../img/sprites.png';
+$cart: (97px, 69px, -97px, -69px, 37px, 32px, 198px, 154px, '../img/sprites.png', 'cart', );
+$chat-branco-name: 'chat-branco';
+$chat-branco-x: 165px;
+$chat-branco-y: 0px;
+$chat-branco-offset-x: -165px;
+$chat-branco-offset-y: 0px;
+$chat-branco-width: 33px;
+$chat-branco-height: 31px;
+$chat-branco-total-width: 198px;
+$chat-branco-total-height: 154px;
+$chat-branco-image: '../img/sprites.png';
+$chat-branco: (165px, 0px, -165px, 0px, 33px, 31px, 198px, 154px, '../img/sprites.png', 'chat-branco', );
+$chat-name: 'chat';
+$chat-x: 136px;
+$chat-y: 0px;
+$chat-offset-x: -136px;
+$chat-offset-y: 0px;
+$chat-width: 29px;
+$chat-height: 39px;
+$chat-total-width: 198px;
+$chat-total-height: 154px;
+$chat-image: '../img/sprites.png';
+$chat: (156px, 123px, -156px, -123px, 31px, 31px, 198px, 154px, '../img/sprites.png', 'chat', );
+$facebook-name: 'facebook';
+$facebook-x: 165px;
+$facebook-y: 91px;
+$facebook-offset-x: -165px;
+$facebook-offset-y: -91px;
+$facebook-width: 14px;
+$facebook-height: 29px;
+$facebook-total-width: 198px;
+$facebook-total-height: 154px;
+$facebook-image: '../img/sprites.png';
+$facebook: (156px, 92px, -156px, -92px, 31px, 31px, 198px, 154px, '../img/sprites.png', 'facebook', );
+$img-perfil-name: 'img-perfil';
+$img-perfil-x: 60px;
+$img-perfil-y: 69px;
+$img-perfil-offset-x: -60px;
+$img-perfil-offset-y: -69px;
+$img-perfil-width: 37px;
+$img-perfil-height: 37px;
+$img-perfil-total-width: 198px;
+$img-perfil-total-height: 154px;
+$img-perfil-image: '../img/sprites.png';
+$img-perfil: (60px, 69px, -60px, -69px, 37px, 37px, 198px, 154px, '../img/sprites.png', 'img-perfil', );
+$logo-rd-name: 'logo-rd';
+$logo-rd-x: 165px;
+$logo-rd-y: 55px;
+$logo-rd-offset-x: -165px;
+$logo-rd-offset-y: -55px;
+$logo-rd-width: 31px;
+$logo-rd-height: 16px;
+$logo-rd-total-width: 198px;
+$logo-rd-total-height: 154px;
+$logo-rd-image: '../img/sprites.png';
+$logo-rd: (165px, 55px, -165px, -55px, 31px, 16px, 198px, 154px, '../img/sprites.png', 'logo-rd', );
+$lupa-busca-name: 'lupa-busca';
+$lupa-busca-x: 165px;
+$lupa-busca-y: 31px;
+$lupa-busca-offset-x: -165px;
+$lupa-busca-offset-y: -31px;
+$lupa-busca-width: 24px;
+$lupa-busca-height: 24px;
+$lupa-busca-total-width: 198px;
+$lupa-busca-total-height: 154px;
+$lupa-busca-image: '../img/sprites.png';
+$lupa-busca: (165px, 31px, -165px, -31px, 24px, 24px, 198px, 154px, '../img/sprites.png', 'lupa-busca', );
+$remove-cart-name: 'remove-cart';
+$remove-cart-x: 41px;
+$remove-cart-y: 129px;
+$remove-cart-offset-x: -41px;
+$remove-cart-offset-y: -129px;
+$remove-cart-width: 41px;
+$remove-cart-height: 25px;
+$remove-cart-total-width: 198px;
+$remove-cart-total-height: 154px;
+$remove-cart-image: '../img/sprites.png';
+$remove-cart: (41px, 129px, -41px, -129px, 41px, 25px, 198px, 154px, '../img/sprites.png', 'remove-cart', );
+$seta-avancar-name: 'seta-avancar';
+$seta-avancar-x: 0px;
+$seta-avancar-y: 69px;
+$seta-avancar-offset-x: 0px;
+$seta-avancar-offset-y: -69px;
+$seta-avancar-width: 60px;
+$seta-avancar-height: 60px;
+$seta-avancar-total-width: 198px;
+$seta-avancar-total-height: 154px;
+$seta-avancar-image: '../img/sprites.png';
+$seta-avancar: (0px, 69px, 0px, -69px, 60px, 60px, 198px, 154px, '../img/sprites.png', 'seta-avancar', );
+$seta-voltar-name: 'seta-voltar';
+$seta-voltar-x: 76px;
+$seta-voltar-y: 0px;
+$seta-voltar-offset-x: -76px;
+$seta-voltar-offset-y: 0px;
+$seta-voltar-width: 60px;
+$seta-voltar-height: 60px;
+$seta-voltar-total-width: 198px;
+$seta-voltar-total-height: 154px;
+$seta-voltar-image: '../img/sprites.png';
+$seta-voltar: (76px, 0px, -76px, 0px, 60px, 60px, 198px, 154px, '../img/sprites.png', 'seta-voltar', );
+$tel-amarelo-name: 'tel-amarelo';
+$tel-amarelo-x: 165px;
+$tel-amarelo-y: 71px;
+$tel-amarelo-offset-x: -165px;
+$tel-amarelo-offset-y: -71px;
+$tel-amarelo-width: 21px;
+$tel-amarelo-height: 20px;
+$tel-amarelo-total-width: 198px;
+$tel-amarelo-total-height: 154px;
+$tel-amarelo-image: '../img/sprites.png';
+$tel-amarelo: (165px, 71px, -165px, -71px, 21px, 20px, 198px, 154px, '../img/sprites.png', 'tel-amarelo', );
+$view-name: 'view';
+$view-x: 60px;
+$view-y: 106px;
+$view-offset-x: -60px;
+$view-offset-y: -106px;
+$view-width: 37px;
+$view-height: 18px;
+$view-total-width: 198px;
+$view-total-height: 154px;
+$view-image: '../img/sprites.png';
+$view: (60px, 106px, -60px, -106px, 37px, 18px, 198px, 154px, '../img/sprites.png', 'view', );
+$spritesheet-width: 198px;
+$spritesheet-height: 154px;
+$spritesheet-image: '../img/sprites.png';
+$spritesheet-sprites: ($add-cart, $bg-redes-sociais, $cart, $chat-branco, $chat, $facebook, $img-perfil, $logo-rd, $lupa-busca, $remove-cart, $seta-avancar, $seta-voltar, $tel-amarelo, $view, );
+$spritesheet: (198px, 154px, '../img/sprites.png', $spritesheet-sprites, );
+
+// The provided mixins are intended to be used with the array-like variables
+//
+// .icon-home {
+//   @include sprite-width($icon-home);
+// }
+//
+// .icon-email {
+//   @include sprite($icon-email);
+// }
+//
+// Example usage in HTML:
+//
+// `display: block` sprite:
+// <div class="icon-home"></div>
+//
+// To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+//
+// // CSS
+// .icon {
+//   display: inline-block;
+// }
+//
+// // HTML
+// <i class="icon icon-home"></i>
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+// The `sprites` mixin generates identical output to the CSS template
+//   but can be overridden inside of SCSS
+//
+// @include sprites($spritesheet-sprites);
+@mixin sprites($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+    .#{$sprite-name} {
+      @include sprite($sprite);
+    }
+  }
+}

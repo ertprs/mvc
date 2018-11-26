@@ -1,0 +1,23 @@
+
+$vermelho: #BE1622;
+$vermelho_escuro: #C6B704;
+$cinza_escuro: #FFFFFF;
+$cinza: #7C808E;
+$cinza_claro: #E1E2E5;
+$branco: #FFFFFF;
+
+body{
+	font-family: 'Roboto', sans-serif;
+}
+
+.icon{
+	display: inline-block;
+}
+
+@import "sprites";
+@import 'mixins.scss';
+@import 'header.scss';
+@import 'main.scss';
+@import 'footer.scss';
+@import 'internas.scss';
+@import 'jcart.scss';
