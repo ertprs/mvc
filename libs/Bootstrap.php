@@ -23,7 +23,7 @@ class Bootstrap {
         $_GET['parametros'] = $this->_url;
 
         // Carrega o controlador padrão se nenhum URL estiver definido
-        // eg: Visite http://localhost carrega o Controlador Padrão
+        // http://localhost carrega o Controlador Padrão
         if(empty($this->_url[0])){
             $this->_loadDefaultController();
             return false;
