@@ -1,6 +1,5 @@
 <?php
-if(strstr($_SERVER['HTTP_HOST'],'dalcolcarnes') !== false)
-exit;
+
 ini_set('display_errors',0);
 
 date_default_timezone_set('America/Sao_Paulo');
